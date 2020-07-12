@@ -8,3 +8,6 @@ covid/old/
 data/.DS_Store
 __pycache__/
 __pycache_-
+work/
+.nextflow/
+.nextflow.log*
