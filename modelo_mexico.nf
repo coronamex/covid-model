@@ -8,7 +8,8 @@ process modelo_mexico{
   conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
   publishDir "R_efectiva/entidades",
     mode: 'rellink',
-    saveAs{filename -> "r_efectiva_${entidad}.csv" }
+    pattern: "r_efectiva.csv",
+    saveAs: {"r_efectiva_${entidad}.csv"}
 
   input:
   val entidad from ENTIDADES
@@ -24,5 +25,4 @@ process modelo_mexico{
     --lut_estados $lut_estados \
     --region $entidad
   """
-
 }
