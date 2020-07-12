@@ -11,3 +11,6 @@ __pycache_-
 work/
 .nextflow/
 .nextflow.log*
+report.html
+timeline.html
+trace.txt
