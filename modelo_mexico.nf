@@ -13,7 +13,7 @@ process modelo_mexico{
     mode: 'rellink',
     pattern: "r_efectiva.csv",
     saveAs: {"r_efectiva_${entidad}.csv"}
-  stageInMode 'rellink'
+  stageInMode 'copy'
 
   input:
   val entidad from ENTIDADES
