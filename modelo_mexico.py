@@ -63,7 +63,7 @@ if __name__ == "__main__":
                        'RESULTADO']).count()
 
     # Obtener datos de región de interés
-    Dat_ent = Dat.loc[(slice(None), region), :]
+    Dat_ent = Dat.loc[(slice(None), args.region), :]
     Dat_ent = Dat_ent.droplevel('ENTIDAD_UM')
     Dat_ent.reset_index(inplace=True)
     Dat_ent = Dat_ent.pivot(index='FECHA_SINTOMAS',
@@ -79,11 +79,11 @@ if __name__ == "__main__":
     Dat_ent.set_index('date', inplace=True)
 
     # Correr modelo
-    gm = GenerativeModel(str(region), Dat_ent)
+    gm = GenerativeModel(str(args.region), Dat_ent)
     gm.sample()
 
     # Escribir resultados
     result = summarize_inference_data(gm.inference_data)
-    result['estado'] = lut_estados[region]
+    result['estado'] = lut_estados[args.region]
     result['fecha_estimado'] = date.today()
     result.to_csv("r_efectiva.csv")
