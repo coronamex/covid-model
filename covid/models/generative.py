@@ -12,7 +12,7 @@ import theano
 import theano.tensor as tt
 from theano.tensor.signal.conv import conv2d
 
-from covid.patients import get_delay_distribution
+from covid.patients import get_delay_distribution, get_incubation_period
 
 
 class GenerativeModel:
@@ -112,7 +112,10 @@ class GenerativeModel:
     def build(self):
         """ Builds and returns the Generative model. Also sets self.model """
 
-        p_delay = get_delay_distribution()
+        # For mexican patients we have onset dates, we only
+        # need to account for incubation time
+        # p_delay = get_delay_distribution()
+        p_delay = get_incubation_period()
         nonzero_days = self.observed.total.gt(0)
         len_observed = len(self.observed)
         convolution_ready_gt = self._get_convolution_ready_gt(len_observed)
@@ -202,7 +205,8 @@ class GenerativeModel:
         chains=4,
         tune=700,
         draws=200,
-        target_accept=0.95,
+        # target_accept=0.95,
+        target_accept=0.5,
         init="jitter+adapt_diag",
     ):
         """ Runs the PyMC3 model and stores the trace result in self.trace """

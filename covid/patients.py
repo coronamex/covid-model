@@ -100,3 +100,12 @@ def get_delay_distribution():
         p_delay.to_csv("data/p_delay.csv", index=False)
 
     return p_delay
+
+def get_incubation_period():
+    """Get incubation period from gamma distribution"""
+
+    p_delay = sps.gamma.pdf(range(20), 2.03, scale = 2.54)
+    p_delay = pd.Series(p_delay)
+    p_delay = p_delay / np.sum(p_delay)
+
+    return p_delay
