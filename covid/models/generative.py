@@ -205,8 +205,8 @@ class GenerativeModel:
         chains=4,
         tune=700,
         draws=200,
-        # target_accept=0.95,
-        target_accept=0.5,
+        target_accept=0.95,
+        # target_accept=0.5,
         init="jitter+adapt_diag",
     ):
         """ Runs the PyMC3 model and stores the trace result in self.trace """
