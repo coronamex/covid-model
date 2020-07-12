@@ -10,10 +10,10 @@ process modelo_mexico{
   cpus 4
   conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
   publishDir "R_efectiva/entidades",
-    mode: 'rellink',
+    mode: 'copy',
     pattern: "r_efectiva.csv",
     saveAs: {"r_efectiva_${entidad}.csv"}
-  stageInMode 'copy'
+  stageInMode 'rellink'
 
   input:
   val entidad from ENTIDADES
