@@ -4,7 +4,7 @@ import pymc3 as pm
 import pandas as pd
 import numpy as np
 import arviz as az
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 from covid.models.generative import GenerativeModel
 from covid.data import summarize_inference_data
 from datetime import date

@@ -1,0 +1,293 @@
+CVE_ZM,NOM_ZM,CVE_MUN,NOM_MUN,CVE_ENT,NOM_ENT
+01.01,Aguascalientes,01001,Aguascalientes,01,Aguascalientes
+01.01,Aguascalientes,01005,Jesús María,01,Aguascalientes
+01.01,Aguascalientes,01011,San Francisco de los Romo,01,Aguascalientes
+02.03,Tijuana,02003,Tecate,02,Baja California
+02.03,Tijuana,02004,Tijuana,02,Baja California
+02.03,Tijuana,02005,Playas de Rosarito,02,Baja California
+03.01,La Paz,03003,La Paz,03,Baja California Sur
+04.01,Campeche,04002,Campeche,04,Campeche
+05.01,La Laguna,05009,Francisco I. Madero,05,Coahuila de Zaragoza
+05.01,La Laguna,05017,Matamoros,05,Coahuila de Zaragoza
+05.01,La Laguna,05035,Torreón,05,Coahuila de Zaragoza
+05.01,La Laguna,10007,Gómez Palacio,05,Coahuila de Zaragoza
+05.01,La Laguna,10012,Lerdo,05,Coahuila de Zaragoza
+06.01,Colima-Villa de álvarez,06002,Colima,06,Colima
+06.01,Colima-Villa de álvarez,06003,Comala,06,Colima
+06.01,Colima-Villa de álvarez,06004,Coquimatlán,06,Colima
+06.01,Colima-Villa de álvarez,06005,Cuauhtémoc,06,Colima
+06.01,Colima-Villa de álvarez,06010,Villa de álvarez,06,Colima
+07.02,Tuxtla Gutiérrez,07012,Berriozábal,07,Chiapas
+07.02,Tuxtla Gutiérrez,07027,Chiapa de Corzo,07,Chiapas
+07.02,Tuxtla Gutiérrez,07079,San Fernando,07,Chiapas
+07.02,Tuxtla Gutiérrez,07086,Suchiapa,07,Chiapas
+07.02,Tuxtla Gutiérrez,07101,Tuxtla Gutiérrez,07,Chiapas
+08.04,Juárez,08037,Juárez,08,Chihuahua
+09.01,Valle de México,09002,Azcapotzalco,09,Ciudad de México
+09.01,Valle de México,09003,Coyoacán,09,Ciudad de México
+09.01,Valle de México,09004,Cuajimalpa de Morelos,09,Ciudad de México
+09.01,Valle de México,09005,Gustavo A. Madero,09,Ciudad de México
+09.01,Valle de México,09006,Iztacalco,09,Ciudad de México
+09.01,Valle de México,09007,Iztapalapa,09,Ciudad de México
+09.01,Valle de México,09008,La Magdalena Contreras,09,Ciudad de México
+09.01,Valle de México,09009,Milpa Alta,09,Ciudad de México
+09.01,Valle de México,09010,álvaro Obregón,09,Ciudad de México
+09.01,Valle de México,09011,Tláhuac,09,Ciudad de México
+09.01,Valle de México,09012,Tlalpan,09,Ciudad de México
+09.01,Valle de México,09013,Xochimilco,09,Ciudad de México
+09.01,Valle de México,09014,Benito Juárez,09,Ciudad de México
+09.01,Valle de México,09015,Cuauhtémoc,09,Ciudad de México
+09.01,Valle de México,09016,Miguel Hidalgo,09,Ciudad de México
+09.01,Valle de México,09017,Venustiano Carranza,09,Ciudad de México
+09.01,Valle de México,13069,Tizayuca,09,Ciudad de México
+09.01,Valle de México,15002,Acolman,09,Ciudad de México
+09.01,Valle de México,15009,Amecameca,09,Ciudad de México
+09.01,Valle de México,15010,Apaxco,09,Ciudad de México
+09.01,Valle de México,15011,Atenco,09,Ciudad de México
+09.01,Valle de México,15013,Atizapán de Zaragoza,09,Ciudad de México
+09.01,Valle de México,15015,Atlautla,09,Ciudad de México
+09.01,Valle de México,15016,Axapusco,09,Ciudad de México
+09.01,Valle de México,15017,Ayapango,09,Ciudad de México
+09.01,Valle de México,15020,Coacalco de Berriozábal,09,Ciudad de México
+09.01,Valle de México,15022,Cocotitlán,09,Ciudad de México
+09.01,Valle de México,15023,Coyotepec,09,Ciudad de México
+09.01,Valle de México,15024,Cuautitlán,09,Ciudad de México
+09.01,Valle de México,15025,Chalco,09,Ciudad de México
+09.01,Valle de México,15028,Chiautla,09,Ciudad de México
+09.01,Valle de México,15029,Chicoloapan,09,Ciudad de México
+09.01,Valle de México,15030,Chiconcuac,09,Ciudad de México
+09.01,Valle de México,15031,Chimalhuacán,09,Ciudad de México
+09.01,Valle de México,15033,Ecatepec de Morelos,09,Ciudad de México
+09.01,Valle de México,15034,Ecatzingo,09,Ciudad de México
+09.01,Valle de México,15035,Huehuetoca,09,Ciudad de México
+09.01,Valle de México,15036,Hueypoxtla,09,Ciudad de México
+09.01,Valle de México,15037,Huixquilucan,09,Ciudad de México
+09.01,Valle de México,15038,Isidro Fabela,09,Ciudad de México
+09.01,Valle de México,15039,Ixtapaluca,09,Ciudad de México
+09.01,Valle de México,15044,Jaltenco,09,Ciudad de México
+09.01,Valle de México,15046,Jilotzingo,09,Ciudad de México
+09.01,Valle de México,15050,Juchitepec,09,Ciudad de México
+09.01,Valle de México,15053,Melchor Ocampo,09,Ciudad de México
+09.01,Valle de México,15057,Naucalpan de Juárez,09,Ciudad de México
+09.01,Valle de México,15058,Nezahualcóyotl,09,Ciudad de México
+09.01,Valle de México,15059,Nextlalpan,09,Ciudad de México
+09.01,Valle de México,15060,Nicolás Romero,09,Ciudad de México
+09.01,Valle de México,15061,Nopaltepec,09,Ciudad de México
+09.01,Valle de México,15065,Otumba,09,Ciudad de México
+09.01,Valle de México,15068,Ozumba,09,Ciudad de México
+09.01,Valle de México,15069,Papalotla,09,Ciudad de México
+09.01,Valle de México,15070,La Paz,09,Ciudad de México
+09.01,Valle de México,15075,San Martín de las Pirámides,09,Ciudad de México
+09.01,Valle de México,15081,Tecámac,09,Ciudad de México
+09.01,Valle de México,15083,Temamatla,09,Ciudad de México
+09.01,Valle de México,15084,Temascalapa,09,Ciudad de México
+09.01,Valle de México,15089,Tenango del Aire,09,Ciudad de México
+09.01,Valle de México,15091,Teoloyucan,09,Ciudad de México
+09.01,Valle de México,15092,Teotihuacán,09,Ciudad de México
+09.01,Valle de México,15093,Tepetlaoxtoc,09,Ciudad de México
+09.01,Valle de México,15094,Tepetlixpa,09,Ciudad de México
+09.01,Valle de México,15095,Tepotzotlán,09,Ciudad de México
+09.01,Valle de México,15096,Tequixquiac,09,Ciudad de México
+09.01,Valle de México,15099,Texcoco,09,Ciudad de México
+09.01,Valle de México,15100,Tezoyuca,09,Ciudad de México
+09.01,Valle de México,15103,Tlalmanalco,09,Ciudad de México
+09.01,Valle de México,15104,Tlalnepantla de Baz,09,Ciudad de México
+09.01,Valle de México,15108,Tultepec,09,Ciudad de México
+09.01,Valle de México,15109,Tultitlán,09,Ciudad de México
+09.01,Valle de México,15112,Villa del Carbón,09,Ciudad de México
+09.01,Valle de México,15120,Zumpango,09,Ciudad de México
+09.01,Valle de México,15121,Cuautitlán Izcalli,09,Ciudad de México
+09.01,Valle de México,15122,Valle de Chalco Solidaridad,09,Ciudad de México
+09.01,Valle de México,15125,Tonanitla,09,Ciudad de México
+10.01,Durango,10005,Durango,10,Durango
+11.03,León,11020,León,11,Guanajuato
+11.03,León,11037,Silao de la Victoria,11,Guanajuato
+12.01,Acapulco,12001,Acapulco de Juárez,12,Guerrero
+12.01,Acapulco,12021,Coyuca de Benítez,12,Guerrero
+13.01,Pachuca,13022,Epazoyucan,13,Hidalgo
+13.01,Pachuca,13039,Mineral del Monte,13,Hidalgo
+13.01,Pachuca,13048,Pachuca de Soto,13,Hidalgo
+13.01,Pachuca,13051,Mineral de la Reforma,13,Hidalgo
+13.01,Pachuca,13052,San Agustín Tlaxiaca,13,Hidalgo
+13.01,Pachuca,13082,Zapotlán de Juárez,13,Hidalgo
+13.01,Pachuca,13083,Zempoala,13,Hidalgo
+14.01,Guadalajara,14002,Acatlán de Juárez,14,Jalisco
+14.01,Guadalajara,14039,Guadalajara,14,Jalisco
+14.01,Guadalajara,14044,Ixtlahuacán de los Membrillos,14,Jalisco
+14.01,Guadalajara,14051,Juanacatlán,14,Jalisco
+14.01,Guadalajara,14070,El Salto,14,Jalisco
+14.01,Guadalajara,14097,Tlajomulco de Zú±iga,14,Jalisco
+14.01,Guadalajara,14098,San Pedro Tlaquepaque,14,Jalisco
+14.01,Guadalajara,14101,Tonalá,14,Jalisco
+14.01,Guadalajara,14120,Zapopan,14,Jalisco
+14.01,Guadalajara,14124,Zapotlanejo,14,Jalisco
+15.02,Toluca,15005,Almoloya de Juárez,15,México
+15.02,Toluca,15018,Calimaya,15,México
+15.02,Toluca,15027,Chapultepec,15,México
+15.02,Toluca,15051,Lerma,15,México
+15.02,Toluca,15054,Metepec,15,México
+15.02,Toluca,15055,Mexicaltzingo,15,México
+15.02,Toluca,15062,Ocoyoacac,15,México
+15.02,Toluca,15067,Otzolotepec,15,México
+15.02,Toluca,15072,Rayón,15,México
+15.02,Toluca,15073,San Antonio la Isla,15,México
+15.02,Toluca,15076,San Mateo Atenco,15,México
+15.02,Toluca,15087,Temoaya,15,México
+15.02,Toluca,15090,Tenango del Valle,15,México
+15.02,Toluca,15106,Toluca,15,México
+15.02,Toluca,15115,Xonacatlán,15,México
+15.02,Toluca,15118,Zinacantepec,15,México
+16.02,Morelia,16022,Charo,16,Michoacán de Ocampo
+16.02,Morelia,16053,Morelia,16,Michoacán de Ocampo
+16.02,Morelia,16088,Tarímbaro,16,Michoacán de Ocampo
+17.02,Cuernavaca,17007,Cuernavaca,17,Morelos
+17.02,Cuernavaca,17008,Emiliano Zapata,17,Morelos
+17.02,Cuernavaca,17009,Huitzilac,17,Morelos
+17.02,Cuernavaca,17011,Jiutepec,17,Morelos
+17.02,Cuernavaca,17018,Temixco,17,Morelos
+17.02,Cuernavaca,17020,Tepoztlán,17,Morelos
+17.02,Cuernavaca,17024,Tlaltizapán de Zapata,17,Morelos
+17.02,Cuernavaca,17028,Xochitepec,17,Morelos
+18.01,Tepic,18008,Xalisco,18,Nayarit
+18.01,Tepic,18017,Tepic,18,Nayarit
+19.01,Monterrey,19001,Abasolo,19,Nuevo León
+19.01,Monterrey,19006,Apodaca,19,Nuevo León
+19.01,Monterrey,19009,Cadereyta Jiménez,19,Nuevo León
+19.01,Monterrey,19010,El Carmen,19,Nuevo León
+19.01,Monterrey,19012,Ciénega de Flores,19,Nuevo León
+19.01,Monterrey,19018,García,19,Nuevo León
+19.01,Monterrey,19019,San Pedro Garza García,19,Nuevo León
+19.01,Monterrey,19021,General Escobedo,19,Nuevo León
+19.01,Monterrey,19025,General Zuazua,19,Nuevo León
+19.01,Monterrey,19026,Guadalupe,19,Nuevo León
+19.01,Monterrey,19031,Juárez,19,Nuevo León
+19.01,Monterrey,19039,Monterrey,19,Nuevo León
+19.01,Monterrey,19041,Pesquería,19,Nuevo León
+19.01,Monterrey,19045,Salinas Victoria,19,Nuevo León
+19.01,Monterrey,19046,San Nicolás de los Garza,19,Nuevo León
+19.01,Monterrey,19047,Hidalgo,19,Nuevo León
+19.01,Monterrey,19048,Santa Catarina,19,Nuevo León
+19.01,Monterrey,19049,Santiago,19,Nuevo León
+20.01,Oaxaca,20045,Magdalena Apasco,20,Oaxaca
+20.01,Oaxaca,20063,Nazareno Etla,20,Oaxaca
+20.01,Oaxaca,20067,Oaxaca de Juárez,20,Oaxaca
+20.01,Oaxaca,20083,San Agustín de las Juntas,20,Oaxaca
+20.01,Oaxaca,20087,San Agustín Yatareni,20,Oaxaca
+20.01,Oaxaca,20091,San Andrés Huayápam,20,Oaxaca
+20.01,Oaxaca,20107,San Antonio de la Cal,20,Oaxaca
+20.01,Oaxaca,20115,San Bartolo Coyotepec,20,Oaxaca
+20.01,Oaxaca,20157,San Jacinto Amilpas,20,Oaxaca
+20.01,Oaxaca,20174,ánimas Trujano,20,Oaxaca
+20.01,Oaxaca,20227,San Lorenzo Cacaotepec,20,Oaxaca
+20.01,Oaxaca,20293,San Pablo Etla,20,Oaxaca
+20.01,Oaxaca,20338,Villa de Etla,20,Oaxaca
+20.01,Oaxaca,20350,San Sebastián Tutla,20,Oaxaca
+20.01,Oaxaca,20375,Santa Cruz Amilpas,20,Oaxaca
+20.01,Oaxaca,20385,Santa Cruz Xoxocotlán,20,Oaxaca
+20.01,Oaxaca,20390,Santa Lucía del Camino,20,Oaxaca
+20.01,Oaxaca,20399,Santa María Atzompa,20,Oaxaca
+20.01,Oaxaca,20403,Santa María Coyotepec,20,Oaxaca
+20.01,Oaxaca,20409,Santa María del Tule,20,Oaxaca
+20.01,Oaxaca,20519,Santo Domingo Tomaltepec,20,Oaxaca
+20.01,Oaxaca,20539,Soledad Etla,20,Oaxaca
+20.01,Oaxaca,20553,Tlalixtac de Cabrera,20,Oaxaca
+20.01,Oaxaca,20565,Villa de Zaachila,20,Oaxaca
+21.01,Puebla-Tlaxcala,21001,Acajete,21,Puebla
+21.01,Puebla-Tlaxcala,21015,Amozoc,21,Puebla
+21.01,Puebla-Tlaxcala,21034,Coronango,21,Puebla
+21.01,Puebla-Tlaxcala,21041,Cuautlancingo,21,Puebla
+21.01,Puebla-Tlaxcala,21048,Chiautzingo,21,Puebla
+21.01,Puebla-Tlaxcala,21060,Domingo Arenas,21,Puebla
+21.01,Puebla-Tlaxcala,21074,Huejotzingo,21,Puebla
+21.01,Puebla-Tlaxcala,21090,Juan C. Bonilla,21,Puebla
+21.01,Puebla-Tlaxcala,21106,Ocoyucan,21,Puebla
+21.01,Puebla-Tlaxcala,21114,Puebla,21,Puebla
+21.01,Puebla-Tlaxcala,21119,San Andrés Cholula,21,Puebla
+21.01,Puebla-Tlaxcala,21122,San Felipe Teotlalcingo,21,Puebla
+21.01,Puebla-Tlaxcala,21125,San Gregorio Atzompa,21,Puebla
+21.01,Puebla-Tlaxcala,21132,San Martín Texmelucan,21,Puebla
+21.01,Puebla-Tlaxcala,21136,San Miguel Xoxtla,21,Puebla
+21.01,Puebla-Tlaxcala,21140,San Pedro Cholula,21,Puebla
+21.01,Puebla-Tlaxcala,21143,San Salvador el Verde,21,Puebla
+21.01,Puebla-Tlaxcala,21163,Tepatlaxco de Hidalgo,21,Puebla
+21.01,Puebla-Tlaxcala,21181,Tlaltenango,21,Puebla
+21.01,Puebla-Tlaxcala,29015,Ixtacuixtla de Mariano Matamoros,21,Puebla
+21.01,Puebla-Tlaxcala,29017,Mazatecochco de José María Morelos,21,Puebla
+21.01,Puebla-Tlaxcala,29019,Tepetitla de Lardizábal,21,Puebla
+21.01,Puebla-Tlaxcala,29022,Acuamanala de Miguel Hidalgo,21,Puebla
+21.01,Puebla-Tlaxcala,29023,Natívitas,21,Puebla
+21.01,Puebla-Tlaxcala,29025,San Pablo del Monte,21,Puebla
+21.01,Puebla-Tlaxcala,29027,Tenancingo,21,Puebla
+21.01,Puebla-Tlaxcala,29028,Teolocholco,21,Puebla
+21.01,Puebla-Tlaxcala,29029,Tepeyanco,21,Puebla
+21.01,Puebla-Tlaxcala,29032,Tetlatlahuca,21,Puebla
+21.01,Puebla-Tlaxcala,29041,Papalotla de Xicohténcatl,21,Puebla
+21.01,Puebla-Tlaxcala,29042,Xicohtzinco,21,Puebla
+21.01,Puebla-Tlaxcala,29044,Zacatelco,21,Puebla
+21.01,Puebla-Tlaxcala,29051,San Jerónimo Zacualpan,21,Puebla
+21.01,Puebla-Tlaxcala,29053,San Juan Huactzinco,21,Puebla
+21.01,Puebla-Tlaxcala,29054,San Lorenzo Axocomanitla,21,Puebla
+21.01,Puebla-Tlaxcala,29056,Santa Ana Nopalucan,21,Puebla
+21.01,Puebla-Tlaxcala,29057,Santa Apolonia Teacalco,21,Puebla
+21.01,Puebla-Tlaxcala,29058,Santa Catarina Ayometla,21,Puebla
+21.01,Puebla-Tlaxcala,29059,Santa Cruz Quilehtla,21,Puebla
+22.01,Querétaro,11004,Apaseo el Alto,22,Querétaro
+22.01,Querétaro,22006,Corregidora,22,Querétaro
+22.01,Querétaro,22008,Huimilpan,22,Querétaro
+22.01,Querétaro,22011,El Marqués,22,Querétaro
+22.01,Querétaro,22014,Querétaro,22,Querétaro
+23.01,Cancún,23003,Isla Mujeres,23,Quintana Roo
+23.01,Cancún,23005,Benito Juárez,23,Quintana Roo
+24.02,San Luis Potosí,24028,San Luis Potosí,24,San Luis Potosí
+24.02,San Luis Potosí,24035,Soledad de Graciano Sánchez,24,San Luis Potosí
+24.02,San Luis Potosí,24055,Zaragoza,24,San Luis Potosí
+25.01,Culiacán,25006,Culiacán,25,Sinaloa
+26.02,Hermosillo,26030,Hermosillo,26,Sonora
+27.01,Villahermosa,27004,Centro,27,Tabasco
+27.01,Villahermosa,27013,Nacajuca,27,Tabasco
+28.05,Tampico,28003,Altamira,28,Tamaulipas
+28.05,Tampico,28009,Ciudad Madero,28,Tamaulipas
+28.05,Tampico,28038,Tampico,28,Tamaulipas
+28.05,Tampico,30123,Pánuco,28,Tamaulipas
+28.05,Tampico,30133,Pueblo Viejo,28,Tamaulipas
+29.01,Tlaxcala-Apizaco,29001,Amaxac de Guerrero,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29002,Apetatitlán de Antonio Carvajal,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29005,Apizaco,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29009,Cuaxomulco,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29010,Chiautempan,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29018,Contla de Juan Cuamatzi,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29024,Panotla,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29026,Santa Cruz Tlaxcala,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29031,Tetla de la Solidaridad,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29033,Tlaxcala,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29035,Tocatlán,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29036,Totolac,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29038,Tzompantepec,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29039,Xaloztoc,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29043,Yauhquemehcan,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29048,La Magdalena Tlaltelulco,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29049,San Damián Texóloc,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29050,San Francisco Tetlanohcan,29,Tlaxcala
+29.01,Tlaxcala-Apizaco,29060,Santa Isabel Xiloxoxtla,29,Tlaxcala
+30.07,Veracruz,30011,Alvarado,30,Veracruz de Ignacio de la Llave
+30.07,Veracruz,30028,Boca del Río,30,Veracruz de Ignacio de la Llave
+30.07,Veracruz,30090,Jamapa,30,Veracruz de Ignacio de la Llave
+30.07,Veracruz,30100,Manlio Fabio Altamirano,30,Veracruz de Ignacio de la Llave
+30.07,Veracruz,30105,Medellín de Bravo,30,Veracruz de Ignacio de la Llave
+30.07,Veracruz,30193,Veracruz,30,Veracruz de Ignacio de la Llave
+31.01,Mérida,31002,Acanceh,31,Yucatán
+31.01,Mérida,31013,Conkal,31,Yucatán
+31.01,Mérida,31038,Hunucmá,31,Yucatán
+31.01,Mérida,31041,Kanasín,31,Yucatán
+31.01,Mérida,31050,Mérida,31,Yucatán
+31.01,Mérida,31063,Samahil,31,Yucatán
+31.01,Mérida,31090,Timucuy,31,Yucatán
+31.01,Mérida,31093,Tixkokob,31,Yucatán
+31.01,Mérida,31095,Tixpéhual,31,Yucatán
+31.01,Mérida,31100,Ucú,31,Yucatán
+31.01,Mérida,31101,Umán,31,Yucatán
+32.01,Zacatecas-Guadalupe,32017,Guadalupe,32,Zacatecas
+32.01,Zacatecas-Guadalupe,32032,Morelos,32,Zacatecas
+32.01,Zacatecas-Guadalupe,32050,Vetagrande,32,Zacatecas
+32.01,Zacatecas-Guadalupe,32056,Zacatecas,32,Zacatecas
+32.01,Zacatecas-Guadalupe,32057,Trancoso,32,Zacatecas
