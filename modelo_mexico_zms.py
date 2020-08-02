@@ -45,7 +45,7 @@ def process_arguments():
     required.add_argument("--region",
                           help=("Clave CVE de la zona metropolitana a "
                                 "analizar."),
-                          required=True, type=int)
+                          required=True, type=str)
 
     # Read arguments
     print("Reading arguments")
