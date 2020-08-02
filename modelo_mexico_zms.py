@@ -72,7 +72,7 @@ if __name__ == "__main__":
     lut_zms.index = lut_zms['CVE_MUN']
 
     # Leer base de datos
-    Dat = pd.read_csv(args_base_de_datos,
+    Dat = pd.read_csv(args.base_de_datos,
                       compression='gzip', sep = ",",
                       encoding='iso-8859-1',
                       dtype = {'ENTIDAD_RES': str,
