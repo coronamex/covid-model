@@ -125,6 +125,6 @@ if __name__ == "__main__":
 
     # Escribir resultados
     result = summarize_inference_data(gm.inference_data)
-    result['zona_metropolitada'] = lut_estados[args.region]
+    result['zona_metropolitada'] = args.region
     result['fecha_estimado'] = date.today()
     result.to_csv("r_efectiva.csv")
