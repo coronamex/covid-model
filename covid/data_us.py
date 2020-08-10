@@ -87,6 +87,8 @@ def process_covidtracking_data(data: pd.DataFrame, run_date: pd.Timestamp):
     data.loc[idx["CT", pd.Timestamp("2020-07-17")], :] = 0
     data.loc[idx["CT", pd.Timestamp("2020-07-21")], :] = 0
 
+    data.loc[idx["DC", pd.Timestamp("2020-08-04")], :] = 0
+
     # Outlier dates in PA
     data.loc[
         idx[
@@ -99,6 +101,9 @@ def process_covidtracking_data(data: pd.DataFrame, run_date: pd.Timestamp):
         ],
         :,
     ] = 0
+
+    data.loc[idx["HI", pd.Timestamp("2020-08-07")], :] = 0
+    data.loc[idx["TX", pd.Timestamp("2020-08-08")], :] = 0
 
     # Zero out any rows where positive tests equal or exceed total reported tests
     # Do not act on Wyoming as they report positive==total most days
