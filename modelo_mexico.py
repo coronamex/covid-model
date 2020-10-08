@@ -53,28 +53,63 @@ if __name__ == "__main__":
                       compression='gzip', sep = ",",
                       encoding='iso-8859-1')
 
-    # Contar pruebas por fecha por entidad
-    Dat = Dat[Dat.RESULTADO != 3][['FECHA_SINTOMAS',
-                                   'ENTIDAD_UM',
-                                   'ID_REGISTRO',
-                                   'RESULTADO']]
+    # # Contar pruebas por fecha por entidad
+    # Dat = Dat[Dat.RESULTADO != 3][['FECHA_SINTOMAS',
+    #                                'ENTIDAD_UM',
+    #                                'ID_REGISTRO',
+    #                                'RESULTADO']]
+    # Dat = Dat.groupby(['FECHA_SINTOMAS',
+    #                    'ENTIDAD_UM',
+    #                    'RESULTADO']).count()
+    
+    # Seleccionar casos con resultado
+    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7])][['FECHA_SINTOMAS',
+                               'ENTIDAD_UM',
+                               'ID_REGISTRO',
+                               'CLASIFICACION_FINAL']]
+
+    # Determinar positivos y negativos, usando pruebas
+    # asociación y dictaminación
+    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3])
+    Dat.loc[ii, 'CLASIFICACION_FINAL'] = 1
+    ii = Dat.CLASIFICACION_FINAL.isin([7])
+    Dat.loc[ii, 'CLASIFICACION_FINAL'] = 2
+
+    # Contar por entidad
     Dat = Dat.groupby(['FECHA_SINTOMAS',
                        'ENTIDAD_UM',
-                       'RESULTADO']).count()
+                       'CLASIFICACION_FINAL']).count()
 
+    # # Obtener datos de región de interés
+    # Dat_ent = Dat.loc[(slice(None), args.region), :]
+    # Dat_ent = Dat_ent.droplevel('ENTIDAD_UM')
+    # Dat_ent.reset_index(inplace=True)
+    # Dat_ent = Dat_ent.pivot(index='FECHA_SINTOMAS',
+    #                         columns='RESULTADO',
+    #                         values='ID_REGISTRO')
+    # Dat_ent.reset_index(inplace=True)
+    # Dat_ent.fillna(0, inplace=True)
+    # Dat_ent['total'] = Dat_ent[1] + Dat_ent[2]
+    # Dat_ent = Dat_ent.rename(columns={'FECHA_SINTOMAS': 'date',
+    #                                   1: 'positive',
+    #                                   2: 'negative'}).drop(columns ='negative')
+    # Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
+    # Dat_ent.set_index('date', inplace=True)
+    
+    
     # Obtener datos de región de interés
     Dat_ent = Dat.loc[(slice(None), args.region), :]
     Dat_ent = Dat_ent.droplevel('ENTIDAD_UM')
     Dat_ent.reset_index(inplace=True)
     Dat_ent = Dat_ent.pivot(index='FECHA_SINTOMAS',
-                            columns='RESULTADO',
+                            columns='CLASIFICACION_FINAL',
                             values='ID_REGISTRO')
     Dat_ent.reset_index(inplace=True)
     Dat_ent.fillna(0, inplace=True)
     Dat_ent['total'] = Dat_ent[1] + Dat_ent[2]
     Dat_ent = Dat_ent.rename(columns={'FECHA_SINTOMAS': 'date',
-                                      1: 'positive',
-                                      2: 'negative'}).drop(columns ='negative')
+                                          1: 'positive',
+                                          2: 'negative'}).drop(columns ='negative')
     Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
     Dat_ent.set_index('date', inplace=True)
 

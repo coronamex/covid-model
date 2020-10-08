@@ -78,13 +78,61 @@ if __name__ == "__main__":
                       dtype = {'ENTIDAD_RES': str,
                                'MUNICIPIO_RES': str})
 
-    # Contar pruebas por fecha por entidad
-    Dat = Dat[Dat.RESULTADO != 3][['FECHA_SINTOMAS',
-                                   'ENTIDAD_RES',
-                                   'MUNICIPIO_RES',
-                                   'ID_REGISTRO',
-                                   'RESULTADO']]
+    # # Contar pruebas por fecha por entidad
+    # Dat = Dat[Dat.RESULTADO != 3][['FECHA_SINTOMAS',
+    #                                'ENTIDAD_RES',
+    #                                'MUNICIPIO_RES',
+    #                                'ID_REGISTRO',
+    #                                'RESULTADO']]
+    
+    # Seleccionar datos con resultado
+    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7])][['FECHA_SINTOMAS',
+                                       'ENTIDAD_RES',
+                                       'MUNICIPIO_RES',
+                                       'ID_REGISTRO',
+                                       'CLASIFICACION_FINAL']]
 
+    # Determinar positivos y negativos, usando pruebas
+    # asociación y dictaminaci
+    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3])
+    Dat.loc[ii, 'CLASIFICACION_FINAL'] = 1
+    ii = Dat.CLASIFICACION_FINAL.isin([7])
+    Dat.loc[ii, 'CLASIFICACION_FINAL'] = 2
+    
+    # # Primero seleccionar municipios en ZMs de interés
+    # Dat['CVE_MUN'] = Dat.ENTIDAD_RES + Dat.MUNICIPIO_RES
+    # Dat = Dat.drop(columns=['ENTIDAD_RES', 'MUNICIPIO_RES'])
+    # ii = Dat['CVE_MUN'].isin(lut_zms.CVE_MUN)
+    # Dat = Dat.loc[ii,].reset_index()
+
+    # # Mapear casos a ZMs de interés
+    # cve_zms = lut_zms.CVE_ZM[Dat.CVE_MUN].reset_index().CVE_ZM
+    # Dat['CVE_ZM'] = cve_zms
+
+    # # Limpiar
+    # Dat = Dat.drop(columns = ['index', 'CVE_MUN'])
+
+    # # Contar
+    # Dat = Dat.groupby(['FECHA_SINTOMAS',
+    #                    'CVE_ZM',
+    #                    'RESULTADO']).count()
+
+    # # Obtener datos de región de interés
+    # Dat_ent = Dat.loc[(slice(None), args.region), :]
+    # Dat_ent = Dat_ent.droplevel('CVE_ZM')
+    # Dat_ent.reset_index(inplace=True)
+    # Dat_ent = Dat_ent.pivot(index='FECHA_SINTOMAS',
+    #                         columns='RESULTADO',
+    #                         values='ID_REGISTRO')
+    # Dat_ent.reset_index(inplace=True)
+    # Dat_ent.fillna(0, inplace=True)
+    # Dat_ent['total'] = Dat_ent[1] + Dat_ent[2]
+    # Dat_ent = Dat_ent.rename(columns={'FECHA_SINTOMAS': 'date',
+    #                                   1: 'positive',
+    #                                   2: 'negative'}).drop(columns ='negative')
+    # Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
+    # Dat_ent.set_index('date', inplace=True)
+    
     # Primero seleccionar municipios en ZMs de interés
     Dat['CVE_MUN'] = Dat.ENTIDAD_RES + Dat.MUNICIPIO_RES
     Dat = Dat.drop(columns=['ENTIDAD_RES', 'MUNICIPIO_RES'])
@@ -101,14 +149,14 @@ if __name__ == "__main__":
     # Contar
     Dat = Dat.groupby(['FECHA_SINTOMAS',
                        'CVE_ZM',
-                       'RESULTADO']).count()
+                       'CLASIFICACION_FINAL']).count()
 
     # Obtener datos de región de interés
     Dat_ent = Dat.loc[(slice(None), args.region), :]
     Dat_ent = Dat_ent.droplevel('CVE_ZM')
     Dat_ent.reset_index(inplace=True)
     Dat_ent = Dat_ent.pivot(index='FECHA_SINTOMAS',
-                            columns='RESULTADO',
+                            columns='CLASIFICACION_FINAL',
                             values='ID_REGISTRO')
     Dat_ent.reset_index(inplace=True)
     Dat_ent.fillna(0, inplace=True)
@@ -118,6 +166,7 @@ if __name__ == "__main__":
                                       2: 'negative'}).drop(columns ='negative')
     Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
     Dat_ent.set_index('date', inplace=True)
+    
 
     # Correr modelo
     gm = GenerativeModel(str(args.region), Dat_ent)
