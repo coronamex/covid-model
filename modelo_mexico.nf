@@ -15,7 +15,7 @@ lut_zms = file(params.lut_zms)
 process modelo_mexico{
   tag "$entidad"
   cpus 4
-  conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
+  // conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
   publishDir "R_efectiva/entidades",
     mode: 'copy',
     pattern: "r_efectiva.csv",
@@ -41,7 +41,7 @@ process modelo_mexico{
 process modelo_mexico_zms{
   tag "$zm"
   cpus 4
-  conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
+  // conda "/opt/modules/pkgs/anaconda/4.8/envs/sur"
   publishDir "R_efectiva/zms",
     mode: 'copy',
     pattern: "r_efectiva.csv",
