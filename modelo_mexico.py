@@ -61,16 +61,16 @@ if __name__ == "__main__":
     # Dat = Dat.groupby(['FECHA_SINTOMAS',
     #                    'ENTIDAD_UM',
     #                    'RESULTADO']).count()
-    
+
     # Seleccionar casos con resultado
-    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7])][['FECHA_SINTOMAS',
+    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7, 8])][['FECHA_SINTOMAS',
                                'ENTIDAD_UM',
                                'ID_REGISTRO',
                                'CLASIFICACION_FINAL']]
 
-    # Determinar positivos y negativos, usando pruebas
-    # asociación y dictaminación
-    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3])
+    # Determinar positivos y negativos, usando pruebas PCR,
+    # asociación, dictaminación y pruebas de antígenos.
+    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3,8])
     Dat.loc[ii, 'CLASIFICACION_FINAL'] = 1
     ii = Dat.CLASIFICACION_FINAL.isin([7])
     Dat.loc[ii, 'CLASIFICACION_FINAL'] = 2
@@ -95,8 +95,8 @@ if __name__ == "__main__":
     #                                   2: 'negative'}).drop(columns ='negative')
     # Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
     # Dat_ent.set_index('date', inplace=True)
-    
-    
+
+
     # Obtener datos de región de interés
     Dat_ent = Dat.loc[(slice(None), args.region), :]
     Dat_ent = Dat_ent.droplevel('ENTIDAD_UM')

@@ -84,21 +84,21 @@ if __name__ == "__main__":
     #                                'MUNICIPIO_RES',
     #                                'ID_REGISTRO',
     #                                'RESULTADO']]
-    
+
     # Seleccionar datos con resultado
-    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7])][['FECHA_SINTOMAS',
+    Dat = Dat[Dat.CLASIFICACION_FINAL.isin([1, 2, 3, 7, 8])][['FECHA_SINTOMAS',
                                        'ENTIDAD_RES',
                                        'MUNICIPIO_RES',
                                        'ID_REGISTRO',
                                        'CLASIFICACION_FINAL']]
 
-    # Determinar positivos y negativos, usando pruebas
-    # asociación y dictaminaci
-    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3])
+    # Determinar positivos y negativos, usando pruebas PCR,
+    # asociación, dictaminación y pruebas de antígenos.
+    ii = Dat.CLASIFICACION_FINAL.isin([1,2,3,8])
     Dat.loc[ii, 'CLASIFICACION_FINAL'] = 1
     ii = Dat.CLASIFICACION_FINAL.isin([7])
     Dat.loc[ii, 'CLASIFICACION_FINAL'] = 2
-    
+
     # # Primero seleccionar municipios en ZMs de interés
     # Dat['CVE_MUN'] = Dat.ENTIDAD_RES + Dat.MUNICIPIO_RES
     # Dat = Dat.drop(columns=['ENTIDAD_RES', 'MUNICIPIO_RES'])
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     #                                   2: 'negative'}).drop(columns ='negative')
     # Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
     # Dat_ent.set_index('date', inplace=True)
-    
+
     # Primero seleccionar municipios en ZMs de interés
     Dat['CVE_MUN'] = Dat.ENTIDAD_RES + Dat.MUNICIPIO_RES
     Dat = Dat.drop(columns=['ENTIDAD_RES', 'MUNICIPIO_RES'])
@@ -166,7 +166,7 @@ if __name__ == "__main__":
                                       2: 'negative'}).drop(columns ='negative')
     Dat_ent['date'] = pd.to_datetime(Dat_ent.date)
     Dat_ent.set_index('date', inplace=True)
-    
+
 
     # Correr modelo
     gm = GenerativeModel(str(args.region), Dat_ent)
